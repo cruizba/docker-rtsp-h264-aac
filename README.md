@@ -10,8 +10,9 @@ It is specially useful also for Kurento Media Server, which does not support som
 ## How to use
 
 1. Clone this repository
-2. Go to `.env` and define your RTSP_URL with the RTSP URL of your camera. For example: `RTSP_URL=rtsp://<yourcamera>:554/`
-3. Run `docker-compose up`
+2. `cd docker-rtsp-h264-aac`
+3. Go to `.env` and define your RTSP_URL with the RTSP URL of your camera. For example: `RTSP_URL=rtsp://<yourcamera>:554/`
+4. Run `docker-compose up`
 
 ## Check if it's working
 
