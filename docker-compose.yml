@@ -1,6 +1,6 @@
 services:
   mediamtx-rtsp-server:
-    image: bluenviron/mediamtx:latest-ffmpeg
+    image: bluenviron/mediamtx:1.8.5-ffmpeg
     ports:
       - 8555:8555
     volumes:
