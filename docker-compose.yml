@@ -1,0 +1,17 @@
+services:
+  mediamtx-rtsp-server:
+    image: bluenviron/mediamtx:latest-ffmpeg
+    ports:
+      - 8555:8555
+    environment:
+      MTX_PROTOCOLS: 'tcp'
+      MTX_PATHS_RTSP_RUNONINIT: >
+        ffmpeg -i ${RTSP_URL?}
+          -c:v libx264 -preset medium -x264opts "keyint=10:min-keyint=10:no-scenecut"
+          -c:a aac -b:a 64k
+          -f rtsp rtsp://localhost:8555/rtsp
+      MTX_RTSPADDRESS: ':8555'
+      MTX_HLS: 'no'
+      MTX_WEBRTC: 'no'
+      MTX_SRT: 'no'
+      MTX_RTMP: 'no'
