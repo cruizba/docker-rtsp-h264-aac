@@ -18,3 +18,9 @@ It is specially useful also for Kurento Media Server, which does not support som
 ```
 ffplay rtsp://admin:password@localhost:8555/rtsp
 ```
+
+# Change rtsp basic auth
+
+Modify the `mediamtx.yml` file here:
+
+https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59
