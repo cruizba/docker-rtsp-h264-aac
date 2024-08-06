@@ -1,4 +1,4 @@
-# docker-rtsp-reencoder
+# docker-rtsp-h264-aac
 A simple docker compose to reencode RTSP streams to H264 and AAC using mediamtx
 
 # Why
