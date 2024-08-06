@@ -16,5 +16,5 @@ It is specially useful also for Kurento Media Server, which does not support som
 # Check if it's working
 
 ```
-ffplay rtsp://localhost:8555/rtsp
+ffplay rtsp://admin:password@localhost:8555/rtsp
 ```
