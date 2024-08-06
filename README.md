@@ -1,34 +1,34 @@
 # docker-rtsp-h264-aac
-A simple docker compose to reencode RTSP streams to H264 and AAC using mediamtx
 
-## Why
+A straightforward Docker Compose setup to re-encode RTSP streams to H264 and AAC using mediamtx.
 
-Sometimes IP Cameras comes with weird codecs that are not supported by some legacy software which can just play H264 and AAC. This project aims to reencode RTSP streams to H264 and AAC using mediamtx in a simple way. Ffmpeg and mediamtx is a great tool to do this, so I decided to create this hackable docker-compose for this purpose.
+## Purpose
 
-It is specially useful also for Kurento Media Server, which does not support some codecs.
+Many IP cameras use codecs that are incompatible with certain legacy software that only supports H264 and AAC. This project re-encodes RTSP streams to H264 and AAC using ffmpeg for transcoding and mediamtx to present a new RTSP server. Ffmpeg and mediamtx are excellent tools for this task, prompting the creation of this easily modifiable Docker Compose setup.
 
-## How to use
+## Usage
 
-1. Clone this repository
-2. `cd docker-rtsp-h264-aac`
-3. Go to `.env` and define your RTSP_URL with the RTSP URL of your camera. For example: `RTSP_URL=rtsp://<yourcamera>:554/`
+1. Clone this repository.
+2. Navigate to the project directory: `cd docker-rtsp-h264-aac`
+3. Edit the `.env` file to set your RTSP_URL with the camera's RTSP URL. For example: `RTSP_URL=rtsp://<yourcamera>:554/`
 4. Run `docker-compose up`
 
-## Check if it's working
+## Verify Operation
 
-```
+Check if the stream is working by running:
+
+```sh
 ffplay rtsp://admin:password@localhost:8555/rtsp
 ```
 
-## Change rtsp basic auth
+## Change RTSP Basic Auth
 
-Modify the `mediamtx.yml` file here:
+To modify the RTSP basic authentication settings, edit the `mediamtx.yml` file at the following lines:
 
-https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59
+[mediamtx.yml#L58-L59](https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59)
 
-## Modify ffmpeg command
+## Modify ffmpeg Command
 
-The ffmpeg command is available in the `docker-compose.yml`:
+The ffmpeg command can be adjusted in the `docker-compose.yml` file at the following lines:
 
-https://github.com/cruizba/docker-rtsp-h264-aac/blob/25a446cfc3f9f19a5f082c31e7b9d982c0162379/docker-compose.yml#L11-L14
-
+[docker-compose.yml#L11-L14](https://github.com/cruizba/docker-rtsp-h264-aac/blob/25a446cfc3f9f19a5f082c31e7b9d982c0162379/docker-compose.yml#L11-L14)
