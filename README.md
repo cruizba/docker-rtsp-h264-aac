@@ -3,7 +3,7 @@ A simple docker compose to reencode RTSP streams to H264 and AAC using mediamtx
 
 ## Why
 
-Sometimes IP Cameras comes with weird codecs that are not supported by some legacy software which can just play H264 and AAC. This project aims to reencode RTSP streams to H264 and AAC using mediamtx in a simple way. Ffmpeg and mediamtx is a great tool to do this, so I decided to create this hackeable docker-compose template for this purpose.
+Sometimes IP Cameras comes with weird codecs that are not supported by some legacy software which can just play H264 and AAC. This project aims to reencode RTSP streams to H264 and AAC using mediamtx in a simple way. Ffmpeg and mediamtx is a great tool to do this, so I decided to create this hackable docker-compose for this purpose.
 
 It is specially useful also for Kurento Media Server, which does not support some codecs.
 
