@@ -25,10 +25,10 @@ ffplay rtsp://admin:password@localhost:8555/rtsp
 
 To modify the RTSP basic authentication settings, edit the `mediamtx.yml` file at the following lines:
 
-[mediamtx.yml#L58-L59](https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59)
+mediamtx.yml#L58-L59https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59
 
 ## Modify ffmpeg Command
 
 The ffmpeg command can be adjusted in the `docker-compose.yml` file at the following lines:
 
-[docker-compose.yml#L11-L14](https://github.com/cruizba/docker-rtsp-h264-aac/blob/25a446cfc3f9f19a5f082c31e7b9d982c0162379/docker-compose.yml#L11-L14)
+https://github.com/cruizba/docker-rtsp-h264-aac/blob/25a446cfc3f9f19a5f082c31e7b9d982c0162379/docker-compose.yml#L11-L14
