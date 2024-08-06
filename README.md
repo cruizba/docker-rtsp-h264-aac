@@ -24,3 +24,10 @@ ffplay rtsp://admin:password@localhost:8555/rtsp
 Modify the `mediamtx.yml` file here:
 
 https://github.com/cruizba/docker-rtsp-h264-aac/blob/756e50da9f87a76ce85997a8455b70d64d1fa40e/mediamtx.yml#L58-L59
+
+# Modify ffmpeg command
+
+The ffmpeg command is available in the `docker-compose.yml`:
+
+https://github.com/cruizba/docker-rtsp-h264-aac/blob/25a446cfc3f9f19a5f082c31e7b9d982c0162379/docker-compose.yml#L11-L14
+
