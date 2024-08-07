@@ -13,7 +13,7 @@ Many IP cameras use codecs that are incompatible with certain legacy software th
 3. Edit the `.env` file to set your RTSP_URL with the camera's RTSP URL. For example: `RTSP_URL=rtsp://<yourcamera>:554/`
 4. Run `docker-compose up`
 
-## Verify Operation
+## Verify new RTSP server
 
 Check if the stream is working by running:
 
